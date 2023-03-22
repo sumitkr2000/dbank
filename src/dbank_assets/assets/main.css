@@ -1,10 +1,12 @@
 html,
 body {
-  background-color: #211F2B;
+  background-image: url("./background.jpg");
+  background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+
 }
 
 h1,
@@ -13,14 +15,14 @@ h2 {
 }
 
 h1 {
-  color: white;
+  color: orangered;
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
 }
 
 h2 {
-  color: rgba(255, 255, 255, 0.5);
+  color: #617BFF;
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -63,12 +65,17 @@ textarea:focus {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   width: 300px;
   margin: 0 auto;
   border-radius: 14px;
   padding: 30px 30px 20px 30px;
   margin-top: 50px;
+}
+
+img {
+  border-radius: 100%;
 }
 
 input[name="amount"] {

@@ -4,14 +4,10 @@ import Float "mo:base/Float";
 
 actor DBank {
   stable var currentValue: Float = 300;
-  // currentValue := 300;
+  currentValue := 300;
 
   stable var startTime =Time.now();
-  // startTime := Time.now();
-  Debug.print(debug_show(startTime));
-
-  let id = 5489577239523759;
-  // Debug.print(debug_show(id));
+  startTime := Time.now();
 
   public func topUp(amount: Float) {
     currentValue += amount;
@@ -40,7 +36,5 @@ actor DBank {
 
     currentValue := currentValue * (1.01 ** Float.fromInt(elapsedTimeS));
     startTime := currentTime;
-  }
-
-  // topUp();
+  };
 }
