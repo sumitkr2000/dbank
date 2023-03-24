@@ -1,7 +1,9 @@
 import type { Principal } from '@dfinity/principal';
+import type { ActorMethod } from '@dfinity/agent';
+
 export interface _SERVICE {
-  'checkBalance' : () => Promise<number>,
-  'compound' : () => Promise<undefined>,
-  'topUp' : (arg_0: number) => Promise<undefined>,
-  'withdraw' : (arg_0: number) => Promise<undefined>,
+  'checkBalance' : ActorMethod<[], number>,
+  'compound' : ActorMethod<[], undefined>,
+  'topUp' : ActorMethod<[number], undefined>,
+  'withdraw' : ActorMethod<[number], undefined>,
 }
